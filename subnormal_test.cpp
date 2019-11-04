@@ -27,9 +27,10 @@ void fp32_denorm_test() {
     volatile float neg_zero = -0.0f;
 
     assert(neg_zero + neg_zero == -0.0f);
-
-
     printf("neg_subnormal + neg_subnormal: %a\n", neg_subnormal + neg_subnormal);
+
+
+    printf("sqrtf subnormal: %a\n", sqrtf(subnormal));
 }
 
 
