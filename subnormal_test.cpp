@@ -5,6 +5,8 @@
 
 #include <pmmintrin.h>
 
+#pragma STDC FENV_ACCESS ON
+
 //warning these macros has to be used in the same scope
 #define MXCSR_SET_DAZ_AND_FTZ \
     int oldMXCSR__ = _mm_getcsr(); /*read the old MXCSR setting */  \
